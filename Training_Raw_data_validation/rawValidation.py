@@ -16,8 +16,6 @@ class Raw_Data_validation:
 
     """
              This class shall be used for handling all the validation done on the Raw Training Data!!.
-
-
              """
 
     def __init__(self,path):
@@ -81,10 +79,7 @@ class Raw_Data_validation:
                                             This Regex is used to validate the filename of the training data.
                                 Output: Regex pattern
                                 On Failure: None
-
-
-
-                                        """
+                                     """
         regex = "['wafer']+['\_'']+[\d_]+[\d]+\.csv"
         return regex
 
@@ -97,9 +92,7 @@ class Raw_Data_validation:
 
                                       Output: None
                                       On Failure: OSError
-
-
-                                              """
+                                            """
 
         try:
             path = os.path.join("Training_Raw_files_validated/", "Good_Raw/")
@@ -124,9 +117,6 @@ class Raw_Data_validation:
                                                           loaded in the DB,deleting the directory ensures space optimization.
                                             Output: None
                                             On Failure: OSError
-
-
-
                                                     """
 
         try:
@@ -152,9 +142,7 @@ class Raw_Data_validation:
                                             Description: This method deletes the directory made to store the bad Data.
                                             Output: None
                                             On Failure: OSError
-
-
-                                                    """
+                                                   """
 
         try:
             path = 'Training_Raw_files_validated/'
@@ -178,8 +166,6 @@ class Raw_Data_validation:
                                                           files to send them back to the client for invalid data issue.
                                             Output: None
                                             On Failure: OSError
-
-
                                                     """
         now = datetime.now()
         date = now.date()
@@ -222,9 +208,6 @@ class Raw_Data_validation:
                                  to Bad Raw Data folder else in Good raw data.
                     Output: None
                     On Failure: Exception
-
-
-
                 """
 
         #pattern = "['Wafer']+['\_'']+[\d_]+[\d]+\.csv"
@@ -276,10 +259,7 @@ class Raw_Data_validation:
                                       The csv file is missing the first column name, this function changes the missing name to "Wafer".
                           Output: None
                           On Failure: Exception
-
-
-
-                      """
+                    """
         try:
             f = open("Training_Logs/columnValidationLog.txt", 'a+')
             self.logger.log(f,"Column Length Validation Started!!")
@@ -311,9 +291,6 @@ class Raw_Data_validation:
                                                SUch files are moved to bad raw data.
                                   Output: None
                                   On Failure: Exception
-
-
-
                               """
         try:
             f = open("Training_Logs/missingValuesInColumn.txt", 'a+')

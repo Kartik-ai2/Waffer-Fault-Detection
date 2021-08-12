@@ -889,3 +889,34 @@
 2021-08-06/01:44:10		Exception occured in find_correct_model_file method of the Model_Finder class. Exception message:  'File_Operation' object has no attribute 'model_name'
 2021-08-06/01:44:10		Exited the find_correct_model_file method of the Model_Finder class with Failure
 2021-08-06/01:44:10		Error occured while running the prediction!! Error:: 
+2021-08-12/03:48:27		Start of Validation on files for prediction!!
+2021-08-12/03:48:34		Raw Data Validation Complete!!
+2021-08-12/03:48:34		Starting Data Transforamtion!!
+2021-08-12/03:48:40		DataTransformation Completed!!!
+2021-08-12/03:48:40		Creating Prediction_Database and tables on the basis of given schema!!!
+2021-08-12/03:48:47		Table creation Completed!!
+2021-08-12/03:48:47		Insertion of Data into Table started!!!!
+2021-08-12/03:48:54		Insertion in Table completed!!!
+2021-08-12/03:48:54		Deleting Good Data Folder!!!
+2021-08-12/03:48:55		Good_Data folder deleted!!!
+2021-08-12/03:48:55		Moving bad files to Archive and deleting Bad_Data folder!!!
+2021-08-12/03:48:55		Bad files moved to archive!! Bad folder Deleted!!
+2021-08-12/03:48:55		Validation Operation completed!!
+2021-08-12/03:48:55		Extracting csv file from table
+2021-08-12/03:48:56		Start of Prediction
+2021-08-12/03:48:56		Entered the get_data method of the Data_Getter class
+2021-08-12/03:48:56		Data Load Successful.Exited the get_data method of the Data_Getter class
+2021-08-12/03:48:56		Entered the is_null_present method of the Preprocessor class
+2021-08-12/03:48:56		Finding missing values is a success.Data written to the null values file. Exited the is_null_present method of the Preprocessor class
+2021-08-12/03:48:56		Entered the impute_missing_values method of the Preprocessor class
+2021-08-12/03:48:58		Imputing missing values Successful. Exited the impute_missing_values method of the Preprocessor class
+2021-08-12/03:48:58		Entered the get_columns_with_zero_std_deviation method of the Preprocessor class
+2021-08-12/03:49:01		Column search for Standard Deviation of Zero Successful. Exited the get_columns_with_zero_std_deviation method of the Preprocessor class
+2021-08-12/03:49:01		Entered the remove_columns method of the Preprocessor class
+2021-08-12/03:49:01		Column removal Successful.Exited the remove_columns method of the Preprocessor class
+2021-08-12/03:49:01		Entered the load_model method of the File_Operation class
+2021-08-12/03:49:01		Model File KMeans loaded. Exited the load_model method of the Model_Finder class
+2021-08-12/03:49:01		Entered the find_correct_model_file method of the File_Operation class
+2021-08-12/03:49:01		Exception occured in find_correct_model_file method of the Model_Finder class. Exception message:  'File_Operation' object has no attribute 'model_name'
+2021-08-12/03:49:01		Exited the find_correct_model_file method of the Model_Finder class with Failure
+2021-08-12/03:49:01		Error occured while running the prediction!! Error:: 
